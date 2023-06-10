@@ -1,0 +1,29 @@
+<div id='form-wrapper' style="margin-bottom: 40px;">
+    <form (ngSubmit)="onSubmit()">
+        <div formGroupName="customer" >
+      <h5>Employee Details</h5>
+        <hr>
+        <div class='form-group mb-1'>
+          <label class='mb-1'>First Name</label>
+          <input [(ngModel)]="employee.firstName" class='form-control mb-1' name="firstName"  type='text' placeholder=''>
+        </div>
+        <div class='form-group mb-1'>
+            <label class='mb-1' >Last Name</label>
+            <input class='form-control mb-1' [(ngModel)]="employee.lastName"   name="lastName"type='text' placeholder=''>
+          </div>
+          <div class='form-group mb-1'>
+            <label class='mb-1' >Job Title</label>
+            <input class='form-control mb-1' [(ngModel)]="employee.jobTitle"   name="jobTitle" type='text' placeholder=''>
+          </div>
+          <div class='form-group mb-1'>
+            <label class='mb-1'>Email</label>
+            <input class='form-control mb-1' [(ngModel)]="employee.emailId"  name="emailId" type='text' placeholder=''>
+          </div>
+          <div class='form-group mb-1'>
+            <label class='mb-1' >Mobile</label>
+            <input class='form-control mb-1' [(ngModel)]="employee.mobile"  name="mobile" type='text' placeholder=''>
+          </div>
+          <div class="text-center" style="margin-top: 33px;">
+            <button type="submit">Submit</button>
+        </div>
+        </div>
